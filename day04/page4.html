@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check() {
+            alert("체크되었습니다!")
+        }
+        function add() {
+            alert("추가되었습니다!")
+        }
+        function login() {
+            alert(id.lenght)
+            id="root"
+            pw="1234"
+            id2 = document.getElementById('id2').value
+            pw2 = document.getElementById('pw2').value
+            result = document.getElementById('result')
+            if (id == id2 && pw == pw2) {
+                result.innerHTML = "<font color=red>로그인 성공!!</font><img src ='ok.jpg' width=100 height=100>"
+                
+            } else {
+                result.innerHTML = "<font color=red>로그인 실패ㅠㅜ</font><img src ='no.png' width=100 height=100>"
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="check()">체크하고 이동</button>
+    <button onclick="add()">추가하고 이동</button>
+    <hr color="black">
+
+    아이디:<input type="text" id="id2" value="root"><br>
+    <hr color="black">
+    패스워드:<input type="password" id="pw2" value="1234"><br>
+    패스워드2:<input type="password" id="pw3" value="1234"><br>
+    <button onclick="login()">로그인하고 이동</button><br>
+    <div id="result">
+        결과
+    </div>
+</body>
+</html>

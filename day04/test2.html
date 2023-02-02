@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function check() {
+            id = document.getElementById("id2").value
+            alert(id.length)
+           
+        }
+        function check2() {
+            pw2 = document.getElementById('pw2').value
+            alert(pw2.length)
+        }
+        
+    </script>
+</head>
+<body>
+    아이디:<input type="text" id="id2" value="test">
+    <button onclick="check()">글자수 체크 </button><br>
+    비밀번호:<input type="password" value="test"><br>
+    비밀번호2:<input type="password2" id="pw2" value="test"><button onclick="check2()">패스워드 동일</button>
+    <hr color="black">
+</body>
+</html>
